@@ -1,0 +1,52 @@
+📦 requirements.txt
+Flask==3.0.3
+Werkzeug==3.0.3
+Jinja2==3.1.4
+itsdangerous==2.2.0
+click==8.1.7
+blinker==1.8.2
+📖 Explanation of Dependencies
+🔹 Flask
+Main framework used to build the web application
+Handles routing, requests, and server
+🔹 Werkzeug
+Provides WSGI utilities
+Handles request/response processing and development server
+🔹 Jinja2
+Template engine used by Flask
+Helps render dynamic HTML pages ({{ }}, {% %})
+🔹 itsdangerous
+Used for securely signing session data
+Important for login/session management
+🔹 click
+Used by Flask for command-line interface (CLI)
+Helps run commands like flask run
+blinker
+Provides signal support (used internally by Flask)
+⚡ Minimal Version (Optional)
+
+If you want a simpler file, you can also use:
+
+Flask==3.0.3
+
+👉 Flask will automatically install all required dependencies.
+
+▶️ How to Install Requirements
+
+Run this command:
+
+pip install -r requirements.txt
+📌 Tips
+Always use a virtual environment:
+python -m venv venv
+venv\Scripts\activate   # Windows
+Then install dependencies
+🚀 Optional Add-ons (Future)
+
+If you upgrade your project later, you may add:
+
+Flask-SQLAlchemy==3.1.1   # For database
+Flask-Login==0.6.3        # For authentication
+
+
+
