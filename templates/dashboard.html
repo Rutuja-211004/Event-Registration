@@ -1,0 +1,10 @@
+<h2>Participants</h2>
+<a href="/register">Add Participant</a> | <a href="/logout">Logout</a>
+<ul>
+{% for p in participants %}
+    <li>{{ p.name }} - {{ p.event }} - {{ p.project }}
+        <a href="/edit/{{ loop.index0 }}">Edit</a>
+        <a href="/delete/{{ loop.index0 }}">Delete</a>
+    </li>
+{% endfor %}
+</ul>
